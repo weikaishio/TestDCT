@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>56F27C81-9E5E-4510-9D64-6DC5F4CE3726</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestConsole</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</key>
+		<string>https://42.121.4.239:8443/svn/cpp/testconsole</string>
+		<key>F91706FF9E34BA9B4C9B854D68D187A438CCC7B4</key>
+		<string>https://github.com/redis/hiredis</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestConsole.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</key>
+		<string>../..</string>
+		<key>F91706FF9E34BA9B4C9B854D68D187A438CCC7B4</key>
+		<string>../../../mongodb/hiredis</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</key>
+		<string>https://42.121.4.239:8443/svn/cpp</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://42.121.4.239:8443/svn/cpp/testconsole/TestConsole.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F91706FF9E34BA9B4C9B854D68D187A438CCC7B4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>hiredis</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestConsole</string>
+		</dict>
+	</array>
+</dict>
+</plist>
