@@ -12,6 +12,8 @@
 	<dict>
 		<key>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</key>
 		<string>https://42.121.4.239:8443/svn/cpp/testconsole</string>
+		<key>A08673E7E3F37CCFED001D67E0491BFC1E017E2E</key>
+		<string>https://github.com/weikaishio/TestCPP.git</string>
 		<key>F91706FF9E34BA9B4C9B854D68D187A438CCC7B4</key>
 		<string>https://github.com/redis/hiredis</string>
 	</dict>
@@ -20,6 +22,8 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</key>
+		<string>../../../TestConsole</string>
+		<key>A08673E7E3F37CCFED001D67E0491BFC1E017E2E</key>
 		<string>../..</string>
 		<key>F91706FF9E34BA9B4C9B854D68D187A438CCC7B4</key>
 		<string>../../../mongodb/hiredis</string>
@@ -30,11 +34,11 @@
 		<string>https://42.121.4.239:8443/svn/cpp</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://42.121.4.239:8443/svn/cpp/testconsole/TestConsole.xcodeproj</string>
+	<string>https://github.com/weikaishio/TestCPP.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</string>
+	<string>A08673E7E3F37CCFED001D67E0491BFC1E017E2E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -52,6 +56,14 @@
 			<string>30dfa27c-f7ac-7045-8615-bc31333dd000++3454</string>
 			<key>IDESourceControlWCCName</key>
 			<string>TestConsole</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A08673E7E3F37CCFED001D67E0491BFC1E017E2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestCPP</string>
 		</dict>
 	</array>
 </dict>

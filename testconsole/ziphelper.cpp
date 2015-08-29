@@ -25,7 +25,7 @@ bool ziphelper::isFileExist(string path){
     }
     return false;
 }
-unzipStatus ziphelper::unzip(string zipPath,string destPath,string configPath,bool isOverWrite,string pwd){
+unzipStatus ziphelper::unzip(string zipPath,string destPath,bool isOverWrite,string pwd,vector<std::string> &files){
     unzipStatus success=unzipStatusSuccess;
     zipFile zip = unzOpen(zipPath.c_str());
     if (zip==NULL) {
@@ -121,18 +121,19 @@ unzipStatus ziphelper::unzip(string zipPath,string destPath,string configPath,bo
         
 //        char* pureFileName=(char*)malloc(strlen(fullPath)-lastIndexOf(fullPath, "/")-1);
 //        substring(pureFileName, fullPath, lastIndexOf(fullPath, "/")+1, strlen(fullPath));
-        int index=fullPath.find_last_of('/');
-        string pureFileName=fullPath.substr(index+1,fullPath.size()-index-1);
+//        int index=fullPath.find_last_of('/');
+//        string pureFileName=fullPath.substr(index+1,fullPath.size()-index-1);
 //        if (strcmp(pureFileName,"config.ini")==0) {
-        if(pureFileName==string("config.ini")){
+//        if(pureFileName==string("config.ini")){
 //            strcpy(configPath, fullPath);
-            configPath=fullPath;
+//            configPath=fullPath;
 //            configPath[strlen(fullPath)]='\0';
-        }
+//        }
 //        free(pureFileName);
         free(filename);
         //        printf("filename:%s,%s\n",filename,fullPath);
         
+        files.push_back(fullPath);
         if (isFileExist(fullPath)&&isOverWrite==0) {
 //            printf("isFileExist:%s\n",fullPath);
             cout<<"isFileExist:"<<fullPath<<endl;
@@ -165,5 +166,10 @@ unzipStatus ziphelper::unzip(string zipPath,string destPath,string configPath,bo
         ret=unzGoToNextFile(zip);
     }while (ret==UNZ_OK&&ret!=UNZ_END_OF_LIST_OF_FILE);
     unzClose(zip);
+//    vector<string>::iterator viter;
+//    for(viter = files.begin(); viter != files.end(); viter++)
+//    {
+//        cout<<"files:"<<*viter<<endl;
+//    }
     return success;
 }

@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <iostream>
+#include <vector>
 
 enum unzipStatus{
     unzipStatusFail=0,
@@ -24,7 +25,7 @@ using namespace std;
 class ziphelper{
 public:
     static bool isFileExist(string path);
-    static unzipStatus unzip(string zipPath,string destPath,string configPath,bool isOverWrite,string pwd);
+    static unzipStatus unzip(string zipPath,string destPath,bool isOverWrite,string pwd,vector<std::string> &files);
 };
 
 #endif /* defined(__TestConsole__ziphelper__) */

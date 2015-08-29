@@ -10,6 +10,7 @@
 //#include "redishelper.h"
 //#include "CHttpClient.h"
 //#include "mysqlhelper.h"
+#include <vector>
 
 #include "ziphelper.h"
 
@@ -68,9 +69,23 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
+    vector<std::string> files;
     //test zip
-    unzipStatus result=ziphelper::unzip("/Users/qihoo/cpp/Test/TestConsole/testconsole/minizip/xx.zip", "/Users/qihoo/cpp/Test/TestConsole/testconsole/minizip", "config.ini", true, "123456");
-    cout<<"ziphelper::unzip:"<<result<<endl;
+    unzipStatus result=ziphelper::unzip("/Users/qihoo/cpp/Test/TestConsole/TestCPP/testconsole/xx.zip", "/Users/qihoo/cpp/Test/TestConsole/TestCPP/testconsole", true, "123456",files);
+    std::cout<<"ziphelper::unzip:"<<result<<std::endl;
+    
+    vector<string>::iterator viter;
+    for(viter = files.begin(); viter != files.end(); viter++)
+    {
+        cout<<"files1:"<<*viter<<endl;
+        string fullPath=*viter;
+        int index=fullPath.find_last_of('/');
+        string pureFileName=fullPath.substr(index+1,fullPath.size()-index-1);
+        if(pureFileName==string("config.ini")){
+            cout<<"config:"<<fullPath<<endl;
+        }
+        
+    }
     
     //test redis
 //    redishelper::getInstance()->getlist();
