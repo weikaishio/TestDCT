@@ -1,0 +1,17 @@
+//
+//  PrefixHeader.pch
+//  GameTest
+//
+//  Created by Tim on 15/8/30.
+//  Copyright (c) 2015年 Wk. All rights reserved.
+//
+
+#ifndef GameTest_PrefixHeader_pch
+#define GameTest_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+const int EDGE_LENGTH = 300;
+const int SUBMATRIX = 64;
+const int SUM_MATRIX = 1024;
+#endif
